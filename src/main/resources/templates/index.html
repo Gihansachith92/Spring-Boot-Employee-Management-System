@@ -31,8 +31,8 @@
                <td th:text="${employee.email}"></td>
                <td th:text="${employee.age}"></td>
                <td th:text="${employee.designation}"></td>
-               <td><a href="@{/updateform/{id}(id=${employee.id})}" class="btn btn-primary">Update</a></td>
-               <td><a href="@{/delete/{id}(id=${employee.id})}" class="btn btn-primary">Delete</a></td>
+               <td><a th:href="@{/updateform/{id}(id=${employee.id})}" class="btn btn-primary">Update</a></td>
+               <td><a th:href="@{/delete/{id}(id=${employee.id})}" class="btn btn-danger">Delete</a></td>
            </tr>
         </tbody>
     </table>
